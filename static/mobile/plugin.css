@@ -1,0 +1,50 @@
+body, a, div, ul, li, ol, p, dl, dd, iframe, textarea, h1, h2, h3, h4, h5, h6, form, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none; }
+html {
+  font-size: 26.67vw; }
+a:link, a:active, a:visited, a:hover {
+  background: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+/*网页内容切换效果*/
+.plinks{
+  display: -webkit-flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.top{
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
+  background-color: #f0f0f0;
+  font-size: .1rem;
+  line-height: .25rem;
+}
+.down{
+  -webkit-flex: 1;
+  background: pink;
+}
+.down2{
+  -webkit-flex: 1;
+  background: yellowgreen;
+}
+.top a{
+  width: .25rem;
+  text-align: center;
+  background: gray;
+  margin-right: .05rem;
+  border-radius: 50%;
+}
+.top a:first-child{
+  background-color: pink;
+}
+.top a:last-child{
+  background-color:  yellowgreen;
+}

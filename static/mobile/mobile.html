@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="plugin.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <button onclick="fun('a1')"></button>
+      </header>
+      <router-view></router-view>
+    </div>
+  </body>
+  <script src="node_modules/vue/dist/vue.js"></script>
+  <script src="node_modules/vue-router/dist/vue-router.js"></script>
+  <script src="plugin.js"></script>
+  <script src="components.js"></script>
+  <script src="mobile.js"></script>
+  <script>
+    // (function() {
+      
+
+    function fun(i){
+        vm._autojump(i)
+      }
+
+
+      const myRouter = new VueRouter({
+        routes: [
+          { path: "/", component: home },
+          { path: "/a1", component: a1 },
+          { path: "/a2", component: a2 },
+          { path: "/a3", component: a3 },
+          { path: "/a4", component: a4 },
+          { path: "/a5", component: a5 },
+          { path: "/a6", component: a6 },
+          { path: "/a7", component: a7 },
+          { path: "/a8", component: a8 },
+          { path: "/a9", component: a9 },
+        ]
+      });
+      var vm=new Vue({
+        router: myRouter,
+        el: "#app",
+        components: {
+          home
+        },
+        methods:{
+          _autojump(i){
+            this.$router.push("/"+i)
+            console.log(i)
+          }
+        }
+      });
+    // })();
+  </script>
+</html>

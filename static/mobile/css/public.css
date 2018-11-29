@@ -1,0 +1,25 @@
+@charset "utf-8";
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,select,option,textarea,fieldset,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+html{
+    font-size: 26.67vw;
+}
+html,body,#app{
+    height: 100%;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #fafafa;
+}
+img{
+    display: block;
+}
