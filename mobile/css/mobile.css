@@ -1,0 +1,76 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .10rem;
+    font-size: .20rem;
+    height: .50rem;
+    background-color: #fff;
+}
+header button{
+    width: .20rem;
+    height: .20rem;
+}
+section{
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding:.10rem;
+}
+
+/*====================*/
+/*目录star*/
+.mobile_nav{
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+.mobile_nav_war{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .10rem 0;
+}
+.mobile_nav_sub{
+    border-top: 1px solid #eaeaea;
+}
+.mobile_nav_span{
+    font-size: .18rem;
+    padding:0 .10rem;
+}
+/*目录end*/
+/*====================*/
+/*换肤start*/
+.plinks{
+    display: -webkit-flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .top{
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+    background-color: #f0f0f0;
+    font-size: .1rem;
+    line-height: .25rem;
+  }
+  .down{
+    -webkit-flex: 1;
+    background: pink;
+  }
+  .down2{
+    -webkit-flex: 1;
+    background: yellowgreen;
+  }
+  .top a{
+    width: .25rem;
+    text-align: center;
+    background: gray;
+    margin-right: .05rem;
+    border-radius: 50%;
+  }
+  .top a:first-child{
+    background-color: pink;
+  }
+  .top a:last-child{
+    background-color:  yellowgreen;
+  }
+  /*换肤end*/
+/*====================*/
