@@ -1,0 +1,70 @@
+header{
+    display: flex;
+    height: .50rem;
+    background-color: #fff;
+}
+header button{
+    width: .20rem;
+    height: .20rem;
+}
+section{
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding:.10rem;
+}
+
+/*====================*/
+/*目录star*/
+.mobile_nav{
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+.mobile_nav_war{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .10rem 0;
+}
+.mobile_nav_sub{
+    border-top: 1px solid #eaeaea;
+}
+.mobile_nav_span{
+    font-size: .18rem;
+    padding:0 .10rem;
+}
+/*目录end*/
+/*====================*/
+
+/*复选框star*/
+.checkboxBig{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: .30rem;
+    height: .30rem;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+  }
+  .check{
+    background-color: #0086b3;
+  }
+  .uncheck{
+    background-color: #fff;
+  }
+  .checkbox .iconfont{
+    font-size: .20rem;
+    color: #fff;
+  }
+  .checkTitle{
+    display: flex;
+    font-size: .15rem;
+    padding-left: .20rem;
+  }
+/*复选框end*/
+/*====================*/
