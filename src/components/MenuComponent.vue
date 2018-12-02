@@ -48,4 +48,7 @@
   .lis a{
     color: rgb(68,68,68);
   }
+  .lis a:hover{
+    color: #0086b3;
+  }
 </style>

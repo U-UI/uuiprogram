@@ -10,15 +10,15 @@
 
     export default {
         name: "RightComponent",
-      props:["rightinfo","idxs"],
+      props:["rightinfo","idxs","parentmethods"],
       methods:{
-          gosrc(i){
-            for (let j=0;j<this.rightinfo.length;j++){
-              if(j==this.idxs){
-                return this.rightinfo[j].src
-              }
-            }
-          }
+          // gosrc(i){
+          //   for (let j=0;j<this.rightinfo.length;j++){
+          //     if(j==this.idxs){
+          //       return this.rightinfo[j].src
+          //     }
+          //   }
+          // }
       }
     }
 </script>
@@ -31,14 +31,17 @@
     background: #fff;
   }
   .show{
-    margin: 90px auto;
-    width: 250px;
-    height: 500px;
+    margin: 50px auto;
+    width: 300px;
+    height: 540px;
     /*background: #eee;*/
   }
   .iframe{
-    width: 250px;
-    height: 500px;
+    width: 300px;
+    height: 540px;
     border: 2px solid #eee;
+  }
+  .iframe::-webkit-scrollbar{
+    display: none;
   }
 </style>
