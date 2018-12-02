@@ -1,0 +1,288 @@
+[
+  {
+    "title": "hello",
+    "src": "",
+    "pointer": [
+      "点击左侧的导航开始探索",
+      "点击右侧的视图进行体验"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮1</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "倒计时",
+    "src": "countdown",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮2</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "下拉刷新",
+    "src": "Refresh",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮3</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "滑入滑出",
+    "src": "SlideInOut",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮5</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "二级菜单",
+    "src": "HoverComponent",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮6</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "隔行变色",
+    "src": "LiColor",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "用户注册",
+    "src": "userRegister",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "新增地址",
+    "src": "AddressList",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "购物车功能",
+    "src": "GoodCard",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "商品规格",
+    "src": "GoodStandard",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "添加地址",
+    "src": "AddressWrite",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "优惠券",
+    "src": "discoupon",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "头部下拉",
+    "src": "FindHeader",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "回到顶部",
+    "src": "goTops",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "编辑信息",
+    "src": "ContentPerson",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "分页器",
+    "src": "pagebtn",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "首页",
+    "src": "dangdangindex",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "搜索页",
+    "src": "searCh",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "发现页面",
+    "src": "AllGop",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "购物车",
+    "src": "dangdangCart",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "个人中心",
+    "src": "MineBig",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "商品详情",
+    "src": "productxq",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮7</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  }
+]
