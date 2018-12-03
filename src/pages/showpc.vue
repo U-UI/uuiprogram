@@ -4,11 +4,10 @@
     <div class="section">
       <menu-showpc  :menuinfo="menuinfo" :changeView="changeView" :clicks="changeSrc"></menu-showpc>
       <con-component :idxs="ind" :coninfo = "menuinfo"></con-component>
-      <right-showpc :currentView="currentView" :menuinfo="menuinfo"></right-showpc>
+      <right-showpc  :currentView="currentView" :menuinfo="menuinfo"></right-showpc>
     </div>
   </div>
 </template>
-
 <script>
     import HeaderComponent from "../components/HeaderComponent";
     import MenuShowpc from "../components/showpc/MenuShowpc";
@@ -20,7 +19,7 @@
       data(){
         return{
           ind:'0',
-          currentView:'demo',
+          currentView:'InputSelect',
           menuinfo:[
             {
               "title": "hello",
@@ -35,125 +34,7 @@
                 "<van-button type=\"warning\">警告按钮</van-button>"
               ]
             },
-            {
-              "title": "ui组件1",
-              "src": "demo2",
-              "pointer": [
-                "import { Button } from 'vant';",
-                "Vue.use(Button);"
-              ],
-              "codeShow": [
-                "<van-button type='default'>默认按钮2</van-button>",
-                "<van-button type='primary'>主要按钮</van-button>",
-                "<van-button type=\"warning\">警告按钮</van-button>"
-              ]
-            },
-            {
-              "title": "ui组件2",
-              "src": "demo2",
-              "pointer": [
-                "import { Button } from 'vant';",
-                "Vue.use(Button);"
-              ],
-              "codeShow": [
-                "<van-button type='default'>默认按钮3</van-button>",
-                "<van-button type='primary'>主要按钮</van-button>",
-                "<van-button type=\"warning\">警告按钮</van-button>"
-              ]
-            },
-            {
-              "title": "ui组件3",
-              "src": "demo",
-              "pointer": [
-                "import { Button } from 'vant';",
-                "Vue.use(Button);"
-              ],
-              "codeShow": [
-                "<van-button type='default'>默认按钮4</van-button>",
-                "<van-button type='primary'>主要按钮</van-button>",
-                "<van-button type=\"warning\">警告按钮</van-button>"
-              ]
-            },
-            {
-              "title": "ui组件4",
-              "src": "demo2",
-              "pointer": [
-                "import { Button } from 'vant';",
-                "Vue.use(Button);"
-              ],
-              "codeShow": [
-                "<van-button type='default'>默认按钮5</van-button>",
-                "<van-button type='primary'>主要按钮</van-button>",
-                "<van-button type=\"warning\">警告按钮</van-button>"
-              ]
-            },
-            {
-              "title": "ui组件5",
-              "src": "demo",
-              "pointer": [
-                "import { Button } from 'vant';",
-                "Vue.use(Button);"
-              ],
-              "codeShow": [
-                "<van-button type='default'>默认按钮6</van-button>",
-                "<van-button type='primary'>主要按钮</van-button>",
-                "<van-button type=\"warning\">警告按钮</van-button>"
-              ]
-            },
-            {
-              "title": "ui组件6",
-              "src": "demo2",
-              "pointer": [
-                "import { Button } from 'vant';",
-                "Vue.use(Button);"
-              ],
-              "codeShow": [
-                "<van-button type='default'>默认按钮7</van-button>",
-                "<van-button type='primary'>主要按钮</van-button>",
-                "<van-button type=\"warning\">警告按钮</van-button>"
-              ]
-            },
-            {
-              "title": "ui组件7",
-              "src": "demo",
-              "pointer": [
-                "import { Button } from 'vant';",
-                "Vue.use(Button);"
-              ],
-              "codeShow": [
-                "<van-button type='default'>默认按钮7</van-button>",
-                "<van-button type='primary'>主要按钮</van-button>",
-                "<van-button type=\"warning\">警告按钮</van-button>"
-              ]
-            },
-            {
-              "title": "ui组件8",
-              "src": "demo2",
-              "pointer": [
-                "import { Button } from 'vant';",
-                "Vue.use(Button);"
-              ],
-              "codeShow": [
-                "<van-button type='default'>默认按钮7</van-button>",
-                "<van-button type='primary'>主要按钮</van-button>",
-                "<van-button type=\"warning\">警告按钮</van-button>"
-              ]
-            },
-            {
-              "title": "ui组件9",
-              "src": "demo",
-              "pointer": [
-                "import { Button } from 'vant';",
-                "Vue.use(Button);"
-              ],
-              "codeShow": [
-                "<van-button type='default'>默认按钮7</van-button>",
-                "<van-button type='primary'>主要按钮</van-button>",
-                "<van-button type=\"warning\">警告按钮</van-button>"
-              ]
-            }
           ]
-
         }
       },
       methods:{
@@ -164,6 +45,13 @@
         changeView(j){
           this.currentView = j
         }
+      },
+      created(){
+          fetch("/static/datapc.json").then(res=>{
+            res.json().then(data=>{
+              this.menuinfo = data
+            })
+          })
       }
     }
 </script>

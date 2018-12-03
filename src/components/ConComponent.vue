@@ -29,6 +29,16 @@
     /*background: #eee;*/
     overflow-y: auto;
   }
+  .conBox::-webkit-scrollbar{
+    width: 8px;
+    background: #ddd;
+    height: 8px;
+    border-radius:5px;
+  }
+  .conBox::-webkit-scrollbar-thumb{
+    background: #aaaaaa;
+    border-radius: 5px;
+  }
   .mainBox{
     overflow-y: auto;
     margin: 100px 30px 30px;
@@ -48,5 +58,6 @@
     background: rgb(240,243,247);
     color: #666;
     line-height: 30px;
+    margin-bottom: 100px;
   }
 </style>
