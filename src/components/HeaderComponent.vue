@@ -73,6 +73,7 @@
     position: absolute;
     top: 70px;
     left: 0px;
+    z-index: 100;
   }
   .header .orginNav:hover ul{
     display: block;

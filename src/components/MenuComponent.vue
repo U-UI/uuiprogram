@@ -33,6 +33,10 @@
     height: 8px;
     border-radius:5px;
   }
+  .leftBox::-webkit-scrollbar-thumb{
+    background: #aaaaaa;
+    border-radius: 5px;
+  }
   .h2title{
     margin:100px 10px 10px;
     font-size: 18px;
@@ -40,6 +44,7 @@
   }
   .uls{
     border-right: 1px solid #eee;
+    padding-bottom: 100px;
   }
   .lis{
     margin: 10px;
