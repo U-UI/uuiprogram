@@ -1,15 +1,31 @@
 <template>
   <div class="header">
     <img src="/static/img/logo.png" alt="">
-    <span class="webname">U-UI</span>
+    <span class="webname" @click="goto('index')">U-UI</span>
     <span class="nav">关于我们</span>
-    <span class="nav">文档</span>
+    <span class="nav orginNav" >文档
+      <ul>
+          <li @click="goto('show')">webapp</li>
+          <li @click="goto('showpc')">后台</li>
+      </ul>
+    </span>
   </div>
 </template>
 
 <script>
     export default {
-        name: "HeaderComponent"
+        name: "HeaderComponent",
+        methods:{
+          goto(i){
+            if (i=="index"){
+              this.$router.push('/')
+            }else if(i=='show'){
+              this.$router.push('/show')
+            }else if (i=='showpc'){
+              this.$router.push('/showpc')
+            }
+          }
+        }
     }
 </script>
 
@@ -19,7 +35,7 @@
     height: 70px;
     background: #ffffff;
     border-bottom: 1px solid #eeeeee;
-    position: fixed;
+    /*position: fixed;*/
   }
   .header img{
     width: 50px;
@@ -31,10 +47,11 @@
     font-size: 32px;
     float: left;
     margin-top: 20px;
+    cursor: pointer;
   }
   .header .nav{
     float: right;
-    padding: 0 30px;
+    padding: 0 50px;
     display: block;
     height: 70px;
     line-height: 70px;
@@ -42,8 +59,23 @@
     cursor: pointer;
   }
   .header .nav:hover{
-    color: blue;
-    font-size: 20px;
-    border-bottom-color: blue;
+    background: #f9f9f9;
+    /*border-bottom-color: blue;*/
+  }
+  .header .orginNav{
+    position: relative;
+  }
+  .header .orginNav ul{
+    display: none;
+    padding: 0 50px;
+    color: #000;
+    background: #f9f9f9;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    z-index: 100;
+  }
+  .header .orginNav:hover ul{
+    display: block;
   }
 </style>

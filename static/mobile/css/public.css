@@ -14,12 +14,34 @@ html{
 html,body,#app{
     height: 100%;
 }
+body::-webkit-scrollbar{
+    display: none;
+  }
 #app{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     background-color: #fafafa;
+
 }
 img{
     display: block;
+}
+
+table{
+    border-collapse:collapse;
+}
+td{
+    word-break: break-all;
+    word-wrap:break-word;
+}
+textarea{
+    resize:none;
+    overflow:auto;
+}
+input,button,select,textarea{
+    outline:none;
+}
+p{
+    word-break:break-word;
 }
