@@ -1,0 +1,416 @@
+[
+  {
+    "title": "表单搜索",
+    "src": "InputSelect",
+    "pointer": [
+      "点击左侧的导航开始探索",
+      "点击右侧的视图进行体验"
+    ],
+    "codeShow": [
+      "data(){",
+      "return{",
+      "currValue:'请选择',",
+      "selectArr:[\"搜索项1\",\"搜索项2\",\"搜索项3\"]",
+      "}",
+      "},",
+      "methods:{",
+      " selectfun(idx){",
+      " this.currValue = this.selectArr[idx]",
+      "}",
+      "}"
+    ]
+  },
+  {
+    "title": "主题切换",
+    "src": "Tabs",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮2</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "Tab切换",
+    "src": "TabSwitch",
+    "pointer": [
+      "点击右侧的导航开始搜索",
+      "点击左侧的视图开始体验;"
+    ],
+    "codeShow": [
+      "data(){",
+      "return{",
+      "tabData: ['选项一', '选项二','选项三'],",
+      "tabContentData: [",
+      "{\"title\":\"主题一\",\"cont\":\"Lorem ipsum dolor sit amet, consectetur adipiscing\"}",
+      "{\"title\":\"主题二\",\"cont\":\"Lorem ipsum dolor sit amet, consectetur purus non. Phasellus pretium rutrum elit in cursus. Donec ullamcorper nec massa vel mattis. \"}",
+      "{\"title\":\"主题三\",\"cont\":\"Curabitur eros metus, dapibus quis est et, dapibus imperdiet dolor. adipiscing\"}",
+      " ]",
+      " num:1",
+      "changeRed:1",
+      "}",
+      "}",
+      " methods:{",
+      "tab(index) {",
+      "this.num=index;",
+      "this.changeRed = index;",
+      "}",
+      "}"
+    ]
+  },
+  {
+    "title": "标签",
+    "src": "Labels",
+    "pointer": [
+      "import { Button } from 'vant';",
+      "Vue.use(Button);"
+    ],
+    "codeShow": [
+      "data(){",
+      "return{",
+      "colorData: [\"#999999\", \"#007aff\", \"#60c560\", \"#f0ad4e\", \"#d9534f\", \"#5bc0de\"]",
+      "tableData: [",
+      "{title\":\"Example heading\", \"h1\":\"New",
+      "spanCon\":[\"Label1\",\"Label2\",\"Label3\",\"Label4\", \"Label5\",\"Label6\"]",
+      "}",
+      "]",
+      "}",
+      "}",
+      " methods:{",
+      "getColor(k) {",
+      "return `background:${this.colorData[k]}`",
+      "}",
+      "}"
+    ]
+  },
+  {
+    "title": "工具提示框",
+    "src": "ToolTip",
+    "pointer": [
+      "css轻松搞定",
+      "请划过看右边效果图;"
+    ],
+    "codeShow": [
+      "<van-button type='default'>默认按钮5</van-button>",
+      "<van-button type='primary'>主要按钮</van-button>",
+      "<van-button type=\"warning\">警告按钮</van-button>"
+    ]
+  },
+  {
+    "title": "消息提示框",
+    "src": "Alerts",
+    "pointer": [
+      "点击右侧的导航开始搜索",
+      "点击左侧的效果开始体验;"
+    ],
+    "codeShow": [
+      "data () {",
+      "return {",
+      "alertData:[",
+      " {",
+      "\"con\":\"Well done! Youthis important alert message.",
+      "'num':'12'",
+      "}",
+      " {",
+      "\"con\":\"Well done! Youthis important alert message.",
+      "'num':'125'",
+      "}",
+      " {",
+      "\"con\":\"Well done! Youthis important alert message.",
+      "'num':'104'",
+      "}",
+      " {",
+      "\"con\":\"Well done! Youthis important alert message.",
+      "'num':'12'",
+      "}",
+      "}",
+      "methods:{",
+      "del(i){",
+      "this.alertData.splice(this.i,1)",
+      "}",
+      "}"
+    ]
+  },
+  {
+    "title": "折叠效果",
+    "src": "Accordion",
+    "pointer": [
+      "点击右侧的导航开始搜索",
+      "点击左侧的效果开始体验;"
+    ],
+    "codeShow": [
+      "引用jquery代码",
+      "$(function () {",
+      "let titleList = $(\".title\")",
+      "let showList = $(\".show\");",
+      "showList.each(function () {",
+      "showList.css(\"display\", \"none\")",
+      " })",
+      "titleList.click(function () {",
+      "$(this).parent().next().slideToggle()",
+      "})",
+      "})",
+      "vue主体代码",
+      "data () {",
+      "return {",
+      "accordData:[",
+      "{title:\"1.webkcome\", content:{\"h1\":\"主题一\",\"span\":\"dft ryh yf egtry hyjuyje yhtyh6ju dgrvfdthyjuui\"}}",
+      "{title:\"2.Trkcome\", content:{\"h1\":\"主题二\",\"span\":\"dftryhy fegt eyhd sferty h6jud grvfdthyjuui\"}}",
+      "{title:\"3.Summsry\", content:{\"h1\":\"主题三\",\"span\":\"dftry hyfeg treyh tyh6judgrv fdthyjuui\"}}",
+      "]",
+      "isActive:false",
+      "changeBg:",
+      "}",
+      "}",
+      " methods:{",
+      "showToogle(index){",
+      "this.isActive=!this.isActive,",
+      "this.changeBg=index",
+      "}",
+      "}"
+    ]
+  },
+  {
+    "title": "分页效果",
+    "src": "Pages",
+    "pointer": [
+      "点击右侧的导航开始搜索",
+      "点击左侧的效果开始体验;"
+    ],
+    "codeShow": [
+      "data () {",
+      "return {",
+      "pageData: [{\"page\": \"1\"}, {\"page\": \"2\"}, {\"page\": \"3\"}, {\"page\": \"4\"}, {\"page\": \"5\"}]",
+      "changeB: 0",
+      "changeBlue: 0,",
+      "}",
+      "}",
+      "methods:{",
+      "blucolor: function (index) {",
+      "this.changeB = index",
+      "}",
+      "blues: function (index) {",
+      "this.changeBlue = index",
+      "}",
+      "}"
+    ]
+  },
+  {
+    "title": "菜单",
+    "src": "menus",
+    "pointer": [
+      "点击显示折叠效果,滑过子菜单变色",
+      "点击右侧视图进行体验"
+    ],
+    "codeShow": [
+      "$(\".title\").on(\"click\",function(){" ,
+      " if($(this).next().height()!=0){" ,
+      "$(this).next().slideUp(\"slow\");" ,
+      "$(this).next().height(0);",
+      "$(this).find(\".triangleTop\").css(\"transform\",\"rotate(180deg)\");" ,
+      "}else{" ,
+      "if($(this).next().hasClass(\"listLast\")){",
+      "$(this).next().height(230);",
+      "}else{",
+      "$(this).next().height(120);",
+      " }",
+      "$(this).next().slideDown(\"slow\");" ,
+      "$(this).find(\".triangleTop\").css(\"transform\",\"rotate(0deg)\");" ,
+      "}"
+    ]
+  },
+  {
+    "title": "表单验证",
+    "src": "FormCheck",
+    "pointer": [
+      "请输入在线体验",
+      "点击右侧视图进行体验"
+    ],
+    "codeShow": [
+      "data(){",
+      "return{",
+      "msgame:''",
+      "msgmail:''",
+      "msgpassword:''",
+      "msgpwd:''",
+      "msgage:''",
+      "msgphone:''",
+      "name:''",
+      "email:''",
+      "password:''",
+      "pwd:''",
+      " phone:''",
+      " age:''",
+      "desc:'hello'",
+      "birthday:''",
+      "sex:{girl:\"女\", boy:\"男\",}",
+      "city:{",
+      "sz\":\"宿州",
+      "cz\":\"滁州",
+      "la\":\"六安",
+      "hn\":\"淮南",
+      " }",
+      "}",
+      "}",
+      "methods:{",
+      "checkname:function(){",
+      "if(this.name=''){",
+      "this.msgame = \"用户名不能为空\"",
+      "}else{",
+      "this.msgame ='';",
+      "}",
+      "}",
+      "checkemail:function(){",
+      "var regEmail=/^[A-Za-zd]+([-_.][A-Za-zd]+)*@([A-Za-zd]+[-.])+[A-Za-zd]{2,5}$/;",
+      "if(this.email==''){",
+      "this.msgmail=\"请输入邮箱\";",
+      "}else if(!regEmail.test(this.email))",
+      "this.msgmail=\"邮箱格式不正确\";",
+      "}",
+      "}",
+      "checkpassword:function(){",
+      "var pwdReg = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/;//",
+      "var value = $('#test').val();",
+      "if(this.password==''){",
+      "this.msgpassword = \"密码不能为空\"",
+      "}else if(!pwdReg.test(value)){",
+      "this.msgpassword =\"密码不合法\";",
+      "}else{",
+      "this.msgpassword = \"密码合法\";",
+      "}",
+      "}",
+      "checkpwd:function(){",
+      "if(this.pwd==''){",
+      "this.msgpassword =\"密码不能为空\";",
+      "}else if(this.pwd !=this.password){",
+      "this.msgpwd = \"输入密码保持一致\"",
+      "}else{",
+      "this.msgpwd =\"输入密码正确\"",
+      "}",
+      "}",
+      "checkphone:function(){",
+      "var myreg = /^1[0-9]{10}$/;",
+      "if(this.phone==''){",
+      "this.msgphone=\"手机号不能为空\";",
+      "}else if(!myreg.test($(\"#phone\").val())){",
+      "this.msgphone=\"请输入有效的手机号码\";",
+      " }else{",
+      "this.msgphone=\"输入正确\"",
+      "}",
+      "},",
+      "checkage:function(){",
+      "if(this.age==''){",
+      " this.msgage = \"年龄不能为空\"",
+      "}else{",
+      "this.msgage=\"输入正确\"",
+      "}",
+      " },",
+      "}",
+      "]",
+      "}"
+    ]
+  },
+  {
+    "title": "Weather",
+    "src": "Weather",
+    "pointer": [
+      "CDN引入",
+      "skycons CDN地址：https://www.bootcdn.cn/skycons/",
+      "创建skycons实例,详情查看代码演示"
+    ],
+    "codeShow": [
+      "html部分",
+      "<canvas id='rain' width='30' height='30'></canvas>",
+      "<canvas id='clear-day' width='30' height='30'></canvas>",
+      "<canvas id='snow' width='30' height='30'></canvas>",
+      "<...>",
+      "js部分",
+      "创建skycons实例",
+      "weather(){",
+      "var icons = new Skycons({",
+      " 'color':'white'",
+      "}),",
+      "skycons图标数组",
+      "list  = [",
+      "'clear-day', 'clear-night', 'partly-cloudy-day',",
+      "'partly-cloudy-night', 'cloudy', 'rain', 'sleet', 'snow', 'wind',",
+      "'fog'",
+      "遍历数组，开始动画",
+      "i;",
+      "for(i = list.length; i--; )",
+      "icons.set(list[i], list[i]);",
+      "icons.play();",
+
+      "}",
+      "在方法中调用",
+      "methods:{",
+      "wearher()",
+      "}",
+      "页面第一次加载完成时显示出来",
+      "mounted(){",
+      "this.weather(this)",
+
+
+
+      "}"
+    ]
+  },
+  {
+    "title": "单选按钮",
+    "src": "Radios",
+    "pointer": [
+      "单选按钮",
+      "单击右侧进行测试"
+    ],
+    "codeShow": [
+      "initData() {",
+      "var self = this;",
+      "self.items = this.itemData;",
+      "if ( self.items.length != 0) {",
+      "self.checkValue = self.items[0].value;",
+      "self.checkId = 'food-' + self.items[0].id",
+      "}",
+      "},",
+      "setCheckValue: function (item) {",
+      "this.checkId = 'food-' + item.id;",
+      "},",
+      "showCheck: function () {",
+      "console.log(this.checkId)",
+      "}"
+    ]
+  },
+  {
+    "title": "多选按钮",
+    "src": "Checkboxs",
+    "pointer": [
+      "多选按钮",
+      "单击右侧进行测试"
+    ],
+    "codeShow": [
+      "computed: {",
+      "filterCheckValues: function () {",
+      "var value = this.checkValues;",
+      "var reValue = '';",
+      "for (var i = 0; i < value.length; i++) {",
+      "reValue += value[i] + '、'",
+      "}",
+      "reValue = reValue.substring(0, reValue.length - 1)",
+      "return reValue;",
+      "}",
+      "},",
+      "methods: {",
+      "initData: function () {",
+      "var self = this;",
+      "self.items = this.itemData;",
+      " if (itemData.length != 0) {",
+
+      "}," ,
+      "}"
+
+    ]
+  }
+
+]
