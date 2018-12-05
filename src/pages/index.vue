@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="footer">
-      <p class="p1">本网站有 前端同创协会(COA)创作维护</p>
+      <p class="p1">本网站由 前端同创协会(COA)创作维护</p>
     </div>
   </div>
 </template>

@@ -1361,3 +1361,168 @@ var pagebtn = Vue.component("fenAll", {
 
 })
 /**分页器 end */
+
+
+
+var indexpage =Vue.component("indexpage",{
+  template:`<div class="indexPage">
+      <header>
+        <a href="">热门</a>
+        <a href="">女装</a>
+        <a href="">百货</a>
+        <a href="">鞋包</a>
+        <a href="">食品</a>
+        <a href="">母婴</a>
+        <a href="">内衣</a>
+        <a href="">电器</a>
+        <a href="">男装</a>
+        <a href="">家具</a>
+        <a href="">水果</a>
+        <a href="">电脑</a>
+    </header>
+
+    <div class="content" id="content">
+    	<div class="solider" id="sliderBox">
+   
+    	</div>
+    	<div class="list_type">
+    		<div class="function_left">
+    			<a href=""><img src="../img/ico1.jpg" alt="" width="100%"><span>限时秒杀</span></a>
+	    		<a href=""><img src="../img/ico2.jpg" alt="" width="100%"><span>每日抢购</span></a>
+	    		<a href=""><img src="../img/ico3.jpg" alt="" width="100%"><span>品牌官</span></a>
+	    		<a href=""><img src="../img/ico4.jpg" alt="" width="100%"><span>多多乐园</span></a>
+	    		<a href=""><img src="../img/ico5.jpg" alt="" width="100%"><span>9块9特卖</span></a>
+	    		<a href=""><img src="../img/ico6.jpg" alt="" width="100%"><span>充值中心</span></a>
+	    		<a href=""><img src="../img/ico7.jpg" alt="" width="100%"><span>爱逛逛</span></a>
+	    		<a href=""><img src="../img/ico8.jpg" alt="" width="100%"><span>现金签到</span></a>
+	    		<a href=""><img src="../img/ico9.jpg" alt="" width="100%"><span>食品超市</span></a>
+	    		<a href=""><img src="../img/ico10.jpg" alt="" width="100%"><span>电器城</span></a>
+    		</div>
+    		<div class="function_right">
+    			<a href=""><img src="../img/ico1.jpg" alt="" width="100%"><span>限时秒杀</span></a>
+	    		<a href=""><img src="../img/ico2.jpg" alt="" width="100%"><span>每日抢购</span></a>
+	    		<a href=""><img src="../img/ico3.jpg" alt="" width="100%"><span>品牌官</span></a>
+	    		<a href=""><img src="../img/ico4.jpg" alt="" width="100%"><span>多多乐园</span></a>
+	    		<a href=""><img src="../img/ico5.jpg" alt="" width="100%"><span>9块9特卖</span></a>
+	    		<a href=""><img src="../img/ico6.jpg" alt="" width="100%"><span>充值中心</span></a>
+	    		<a href=""><img src="../img/ico7.jpg" alt="" width="100%"><span>爱逛逛</span></a>
+	    		<a href=""><img src="../img/ico8.jpg" alt="" width="100%"><span>现金签到</span></a>
+	    		<a href=""><img src="../img/ico9.jpg" alt="" width="100%"><span>食品超市</span></a>
+	    		<a href=""><img src="../img/ico10.jpg" alt="" width="100%"><span>电器城</span></a>
+			</div>
+		</div>
+	
+		
+		<div class="goodsList">
+			<div><img src="../img/list_1.jpg" width="100%" alt=""></div>
+			<div id="goodsInfo" class="goodsInfo">
+				<h3>【1000g】约34包红豆薏米饼干祛湿全麦饼干无糖代餐</h3>
+				<p class="">立减1元</p>
+				<p class="sell">
+					<span id="price">$6.48</span>
+					以拼6万元
+					<span>
+						<img src="../img/list_1_1.jpg" width="100%" alt="" id="imgId">
+					</span>
+				</p>
+			</div>
+		</div>
+		<div class="specialPrice">
+				<p>10.27每日特价<img src="../img/xin.jpg" width="100%"alt="">家庭清洁超低折扣<a href="">查看更多</a></>
+				<div class="recommdGoodsBox">
+					<div class="recommdGoods">
+						<img src="../img/tj_2.jpg" alt="">
+						<p>加绒保暖家用手套</p>
+						<span>活动价￥2.3</span>
+					</div>
+					<div class="recommdGoods">
+							<img src="../img/tj_1.jpg" alt="">
+							<p>加绒保暖家用手套</p>
+							<span>活动价￥2.3</span>
+					</div>
+					<div class="recommdGoods">
+							<img src="../img/tj_3.jpg" alt="">
+							<p>加绒保暖家用手套</p>
+							<span>活动价￥2.3</span>
+					</div>
+					<div class="recommdGoods">
+							<img src="../img/tj_1.jpg" alt="">
+							<p>加绒保暖家用手套</p>
+							<span>活动价￥2.3</span>
+					</div>
+					<div class="recommdGoods">
+							<img src="../img/tj_1.jpg" alt="">
+							<p>加绒保暖家用手套</p>
+							<span>活动价￥2.3</span>
+					</div>
+				</div>
+		</div>
+		<div class="goodsList">
+			<div><img src="../img/list_2.jpg" width="100%" alt=""></div>
+			<div id="goodsInfo" class="goodsInfo">
+				<h3>【1000g】约34包红豆薏米饼干祛湿全麦饼干无糖代餐</h3>
+				<p class="">立减1元</p>
+				<p class="sell">
+					<span id="price">$6.48</span>
+					以拼6万元
+					<span>
+						<img src="../img/list_1_1.jpg" width="100%" alt="" id="imgId">
+					</span>
+				</p>
+			</div>
+		</div>
+		
+		<div class="goodsList">
+				<div><img src="../img/list_4.jpg" width="100%" alt=""></div>
+				<div id="goodsInfo" class="goodsInfo">
+					<h3>【1000g】约34包红豆薏米饼干祛湿全麦饼干无糖代餐</h3>
+					<p class="">立减1元</p>
+					<p class="sell">
+						<span id="price">$6.48</span>
+						以拼6万元
+						<span>
+							<img src="../img/list_1_1.jpg" width="100%" alt="" id="imgId">
+						</span>
+					</p>
+				</div>
+		</div>
+		<div class="goodsList">
+				<div><img src="../img/list_5.jpg" width="100%" alt=""></div>
+				<div id="goodsInfo" class="goodsInfo">
+					<h3>【1000g】约34包红豆薏米饼干祛湿全麦饼干无糖代餐</h3>
+					<p class="">立减1元</p>
+					<p class="sell">
+						<span id="price">$6.48</span>
+						以拼6万元
+						<span>
+							<img src="../img/list_1_1.jpg" width="100%" alt="" id="imgId">
+						</span>
+					</p>
+				</div>
+		</div>
+		<div class="goodsList">
+				<div><img src="../img/list_5.jpg" width="100%" alt=""></div>
+				<div id="goodsInfo" class="goodsInfo">
+					<h3>【1000g】约34包红豆薏米饼干祛湿全麦饼干无糖代餐</h3>
+					<p class="">立减1元</p>
+					<p class="sell">
+						<span id="price">$6.48</span>
+						以拼6万元
+						<span>
+							<img src="../img/list_1_1.jpg" width="100%" alt="" id="imgId">
+						</span>
+					</p>
+				</div>
+		</div>
+	</div>
+	<footer>
+		<a href=""><i class="iconfont icon-shouye"></i><span>首页</span></a>
+		<a href=><i class="iconfont icon-tuijian"></i><span style="font-size: .08rem">推荐</span></a>
+		<a href=""><i class="iconfont icon-sousuo"></i><span>搜索</span></a>
+		<a href="">
+			<i class="iconfont icon-liaotian"></i><span>聊天</span></a>
+		<a href=""><i class="iconfont icon-gerenzhongxin"></i><span>个人中心</span></a>
+	</footer>	
+ 
+</div>`
+})

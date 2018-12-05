@@ -443,7 +443,7 @@
 /**首页end */
 //============
 /**购物车start */
-var dangdangCart=Vue.component("dangdangCart",{
+var  dangdangCart=Vue.component("dangdangCart",{
   template:`<div class="cart_box">
 <cart-head></cart-head>
 <cart-section :products="info"></cart-section>
@@ -962,34 +962,34 @@ var MineBig =  Vue.component("mineBig",{
             "title":"您关注的书电子版可以免费阅读",
             "book":[
               {
-                "pic": "static/img/w1.jpg",
+                "pic": "img/w1.jpg",
                 "info":"把生活过成艺术"
               },{
-                "pic": "static/img/w2.jpg",
+                "pic": "img/w2.jpg",
                 "info":"年轻人要多背债"
               },{
-                "pic": "static/img/w3.jpg",
+                "pic": "img/w3.jpg",
                 "info":"情商高，才能活得好"
               },{
                 "pic": "static/img/w4.jpg",
                 "info":"金瓶梅(全集在线观看)"
               },{
-                "pic": "static/img/w5.jpg",
+                "pic": "img/w5.jpg",
                 "info":"月亮与六个女人"
               },{
-                "pic": "static/img/w6.jpg",
+                "pic": "img/w6.jpg",
                 "info":"凉生我们在一起"
               },{
-                "pic": "static/img/w7.jpg",
+                "pic": "img/w7.jpg",
                 "info":"走遍中国没毛病"
               },{
-                "pic": "static/img/w8.jpg",
+                "pic": "img/w8.jpg",
                 "info":"我喜欢生活在中国"
               },{
-                "pic": "static/img/w9.jpg",
+                "pic": "img/w9.jpg",
                 "info":"在北大听讲座"
               },{
-                "pic": "static/img/w10.jpg",
+                "pic": "img/w10.jpg",
                 "info":"你坚持的理由是什么"
               }
             ],
@@ -1023,56 +1023,56 @@ var MineBig =  Vue.component("mineBig",{
           {
             "name":"三体：全三册 刘慈欣代表作，亚洲首部“雨果奖”获奖作品！",
             "price":22.5,
-            "pic":"static/img/w3.jpg",
+            "pic":"img/w3.jpg",
             "isSs":true,
             "pinkage":false
           },
           {
             "name":"心有猛虎 细嗅蔷薇（余光中散文精选）",
             "price":39.5,
-            "pic":"static/img/w4.jpg",
+            "pic":"img/w4.jpg",
             "isSs":true,
             "pinkage":true
           },
           {
             "name":"圈层突破 : 如何打破人生的壁垒（当当签名版）",
             "price":22.5,
-            "pic":"static/img/w5.jpg",
+            "pic":"img/w5.jpg",
             "isSs":true,
             "pinkage":false
           },
           {
             "name":"国家是怎样炼成的2",
             "price":22.5,
-            "pic":"static/img/w6.jpg",
+            "pic":"img/w6.jpg",
             "isSs":true,
             "pinkage":false
           },
           {
             "name":"边城",
             "price":22.5,
-            "pic":"static/img/w7.jpg",
+            "pic":"img/w7.jpg",
             "isSs":true,
             "pinkage":true
           },
           {
             "name":"小王子（畅销300万册，作者基金会官方认证简体中文版）【果麦经典】",
             "price":22.5,
-            "pic":"static/img/w8.jpg",
+            "pic":"img/w8.jpg",
             "isSs":true,
             "pinkage":true
           },
           {
             "name":"肥志百科(当当独家亲笔签名+表情包贴纸）",
             "price":22.5,
-            "pic":"static/img/w9.jpg",
+            "pic":"img/w9.jpg",
             "isSs":true,
             "pinkage":false
           },
           {
             "name":"东野圭吾：白夜行（2017版，易烊千玺、韩雪推荐，东野圭吾无冕之王）",
             "price":22.5,
-            "pic":"static/img/w10.jpg",
+            "pic":"img/w10.jpg",
             "isSs":true,
             "pinkage":true
           }
@@ -1105,7 +1105,6 @@ var MineBig =  Vue.component("mineBig",{
       let that = this
       let start;  // 辅助变量：触摸开始时，相对于文档顶部的Y坐标
       // let refresh = false;
-      if(!that.isPC()){
         that.div.addEventListener('touchstart',function(event){
           let touch = event.touches[0];
           start = touch.pageY;  // 辅助变量：触摸开始时，相对于文档顶部的Y坐标
@@ -1138,71 +1137,15 @@ var MineBig =  Vue.component("mineBig",{
               if(that.ul.offsetTop<=0){
                 clearInterval(time);
                 that.text.innerHTML = "下拉刷新";
-                // if(refresh){
-                //   location.reload();
-                // }
+                if(refresh){
+                  location.reload();
+                }
               }
             })
           }
         },false);
-      }else{
-        that.div.onmousedown=(event)=>{
-          that.div.onmousemove=null
-          console.log("down")
-          start = event.pageY;
-          that.div.onmousemove=(event)=>{
-            that.div.onmouseup=()=>{
-              that.div.onmousemove=null
-              console.log("up")
-              // 若'touchend'时，ul偏移,用setInterval循环恢复ul的偏移量
-              if(this.ul.offsetTop>=0) {
-                let time = setInterval(()=>{
-                  this.ul.style.top = this.ul.offsetTop -3 +'px';
-                  // 若ul的偏移量恢复，clearInterval
-                  if(this.ul.offsetTop<=0){
-                    clearInterval(time);
-                    this.text.innerHTML = "下拉刷新";
-                    // if(refresh){
-                    //   location.reload();
-                    // }
-                  }
-                })
-              }
-            };
-            console.log("move")
-            // 下拉刷新
-            if(this.div.scrollTop>=0){
-              // 如果ul列表到顶部，修改ul列表的偏移,显示“下拉刷新”，并准备触发下拉刷新功能，可自定义
-              this.ul.style.top = this.ul.offsetTop + event.pageY - start +'px'; // ul.style.top = ul.offsetTop + 'px'
-              start = event.pageY;
-              // 若ul偏移量过大,则修改文字,refresh置为true,配合'touchend'刷新
-              if(this.ul.offsetTop>=100) {
-                this.text.innerHTML = "拉到头啦";
-                refresh = true;
-              }
-            }
-          };
-          that.div.onmouseup=()=>{
-            console.log("up")
-            that.div.onmousemove=null
-            // 若'touchend'时，ul偏移,用setInterval循环恢复ul的偏移量
-            if(this.ul.offsetTop>=0) {
-              let time = setInterval(()=>{
-                this.ul.style.top = this.ul.offsetTop -3 +'px';
-                // 若ul的偏移量恢复，clearInterval
-                if(this.ul.offsetTop<=0){
-                  clearInterval(time);
-                  this.text.innerHTML = "下拉刷新";
-                  // if(refresh){
-                  //   location.reload();
-                  // }
-                }
-              })
-            }
-          };
-        }
 
-      }
+
     },
     gundong(){
       this.$refs.opac.style.opacity = .3

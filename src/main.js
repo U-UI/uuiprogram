@@ -5,6 +5,9 @@ import App from './App'
 import router from './router'
 import store from './store'
 import publicstyle from './assets/css/public.css'
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts
+import iconfontStyle from './assets/css/iconfont.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

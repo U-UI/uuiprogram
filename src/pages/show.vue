@@ -21,7 +21,14 @@
           return{
             ind:'0',
             menuinfo:[
-              {title:"介绍",src:"a1",pointer:["import { Button } from 'vant';","Vue.use(Button);"],codeShow:["<van-button type='default'>默认按钮1</van-button>","<van-button type='primary'>主要按钮</van-button>","<van-button type=\"warning\">警告按钮</van-button>"]},
+              {title:"介绍",src:"a1",
+                pointer:["import { Button } from 'vant';","Vue.use(Button);"],
+                codeShow:[
+                  "<van-button type='default'>默认按钮1</van-button>",
+                  "<van-button type='primary'>主要按钮</van-button>",
+                  "<van-button type=\"warning\">警告按钮</van-button>"
+                ]
+              },
             ]
           }
       },
@@ -47,6 +54,7 @@
   .showBox{
     height:100%;
     overflow: hidden;
+    background-color: #f0f0f0;
   }
   .section{
     overflow: hidden;

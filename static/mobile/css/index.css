@@ -1,0 +1,265 @@
+.indexPage{
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+}
+a {
+  text-decoration: none; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  border: none;
+  display: block; }
+
+.indexPage footer {
+  width: 100%;
+  height: .53rem;
+  background: #ffffff;
+  display: -webkit-flex;}
+.indexPage footer a {
+  -webkit-flex: 1;
+  display: -webkit-flex;
+  text-align: center;
+  padding-top: .1rem;
+  -webkit-flex-direction: column;}
+.indexPage footer a span {
+  color: #666666!important;
+  font-size: .1rem;
+  line-height: .2rem;}
+
+.indexPage .icon-shouye,.icon-tuijian, .icon-sousuo, .icon-gerenzhongxin,.icon-liaotian {
+  font-size: .24rem;
+  color: #666666; }
+
+.topTitle{
+  display: block;
+}
+.icon-dingbu-{
+  margin-top: .05rem;
+  margin-bottom: .01rem;
+}
+.indexPage .box{
+  display: none;
+  /* display: -webkit-flex; */
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  width: .67rem;
+  height: .87rem;
+}
+
+.indexPage header {
+  width: 100%;
+  height: .51rem;
+  display: -webkit-flex;
+  -webkit-flex-wrap: nowrap;
+  overflow-x: auto; }
+ .indexPage  header a {
+    line-height: .51rem;
+    width: .34rem;
+    height: .51rem;
+    font-size: .15rem;
+    color: #444444;
+    -webkit-flex-shrink: 0;
+    margin: 0 .18rem; }
+ .indexPage  header a:nth-child(1) {
+    color: red;
+    background: url(../img/t_line.jpg) no-repeat center bottom;
+    background-size: 100%; }
+
+.indexPage header::-webkit-scrollbar {
+  display: none; }
+
+.indexPage .content {
+  width: 100%;
+  -webkit-flex: 1;
+  background: #f4f4f4;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.indexPage .content::-webkit-scrollbar {
+  display: none; }
+
+.indexPage .solider {
+  width: 3.6rem;
+  background: pink;
+  height: 1.34rem; }
+
+.indexPage .list_type {
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-wrap: nowrap;
+  overflow-x: auto;
+
+  background: #ffffff;
+  padding-bottom: .2rem; }
+
+.indexPage .list_type::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: .0rem;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 2px;
+  text-align: center; }
+
+.list_type::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: .03rem;
+  background-color: #ff6969;
+  text-align: center;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent); }
+
+.list_type::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  /*border-radius: 10px;*/
+  background: #EDEDED; }
+
+.function_left, .function_right {
+  -webkit-flex-shrink: 0;
+  width: 3.6rem;
+  height: 1.80rem;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  padding-bottom: .1rem; }
+  .function_left a, .function_right a {
+    -webkit-flex-shrink: 0;
+    width: .51rem;
+    height: .6rem;
+    font-size: .12rem;
+    color: #666666;
+    margin: .12rem .1rem;
+    text-align: center; }
+    .function_left a img, .function_right a img {
+      margin-bottom: .07rem; }
+
+.indexPage .bgBox {
+  width: 3.6rem;
+  height: .04rem;
+  background: url(../img/l_bg.jpg) no-repeat center bottom;
+  background-size: 1.02rem .03rem; }
+
+.indexPage .goodsList {
+  margin: .07rem .07rem;
+  padding-left: .06rem;
+  padding-top: .06rem;
+  padding-bottom: .06rem;
+  padding-right: .02rem;
+  display: -webkit-flex;
+  width: 3.36rem;
+  height: 1.63rem;
+  border-radius: .03rem;
+  background: #ffffff; }
+  .indexPage .goodsList div:nth-child(1) {
+    width: 1.31rem;
+    height: 1.31rem; }
+   .indexPage .goodsList div:nth-child(1) img {
+      width: 1.31rem;
+      height: 1.31rem; }
+
+.indexPage .goodsInfo {
+  width: 1.8rem;
+  height: 1.21rem;
+  padding-left: .1rem; }
+ .indexPage .goodsInfo h3 {
+    font-size: .14rem;
+    color: #000000;
+    line-height: .2rem;
+    margin-top: .1rem;
+    margin-bottom: .3rem; }
+  .indexPage .goodsInfo p:nth-child(2) {
+    width: .49rem;
+    height: .11rem;
+    font-size: .1rem;
+    color: #ff5f13;
+    background: #fff2eb;
+    border-radius: .03rem; }
+
+.indexPage #price {
+  font-size: .13rem;
+  color: #e02e24;
+  margin-right: .07rem; }
+
+.indexPage .sell {
+  color: #58595b;
+  font-size: .12rem;
+  line-height: .34rem;
+  display: -webkit-flex; }
+
+.indexPage #imgId {
+  margin-left: .4rem;
+  width: .41rem;
+  height: .23rem;
+  display: block; }
+
+.indexPage .specialPrice {
+  margin: .07rem .07rem;
+  padding: .06rem;
+  padding-right: .02rem;
+  display: -webkit-flex;
+  width: 3.36rem;
+  height: 1.88rem;
+  border-radius: .03rem;
+  background: #ffffff;
+  -webkit-flex-direction: column; }
+  .specialPrice p {
+    display: -webkit-flex;
+    color: #181818;
+    font-size: .14rem;
+    line-height: .37rem;
+    text-align: center;
+    vertical-align: middle; }
+    .specialPrice p img {
+      width: .19rem;
+      height: .2rem;
+      padding-top: .06rem;
+      vertical-align: middle; }
+    .specialPrice p a {
+      vertical-align: middle;
+      text-align: center;
+      width: .9rem;
+      color: #9c9c9c;
+      font-size: .14rem;
+      background: url(../img/jian.jpg) no-repeat right center;
+      background-size: .09rem .14rem;
+      margin-left: .18rem; }
+
+.recommdGoodsBox {
+  width: 100%;
+  display: -webkit-flex;
+  height: 1.60rem;
+  -webkit-flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden; }
+
+.recommdGoodsBox::-webkit-scrollbar {
+  display: none; }
+
+.recommdGoods {
+  width: 1.10rem;
+  height: 1.60rem;
+  display: -webkit-flex;
+  text-align: center;
+  -webkit-flex-direction: column;
+  -webkit-flex: 1;
+  -webkit-flex-shrink: 0;
+  margin-right: .05rem; }
+  .recommdGoods img {
+    width: 1.1rem;
+    height: 1.1rem; }
+  .recommdGoods p {
+    font-weight: 600;
+    color: #151516;
+    font-size: .12rem;
+    line-height: .28rem; }
+  .recommdGoods span {
+    color: #e02e24;
+    font-size: .12rem;
+    padding-right: .12rem;
+    padding-bottom: .08rem; }
+
+    .indexPage .icon-shouye {
+      color: red;
+      font-size: .24rem; }
+    
+/*# sourceMappingURL=sy.css.map */

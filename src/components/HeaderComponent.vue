@@ -2,11 +2,12 @@
   <div class="header">
     <img src="/static/img/logo.png" alt="">
     <span class="webname" @click="goto('index')">U-UI</span>
-    <span class="nav">关于我们</span>
+    <span class="nav"><a href="/static/about/about.html" style="color:black">关于我们</a></span>
     <span class="nav orginNav" >文档
       <ul>
           <li @click="goto('show')">webapp</li>
           <li @click="goto('showpc')">后台</li>
+          <li @click="goto('home')">案例</li>
       </ul>
     </span>
   </div>
@@ -23,6 +24,8 @@
               this.$router.push('/show')
             }else if (i=='showpc'){
               this.$router.push('/showpc')
+            }else if(i=='home'){
+              this.$router.push('/home')
             }
           }
         }

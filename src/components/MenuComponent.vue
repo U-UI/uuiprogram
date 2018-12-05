@@ -13,6 +13,7 @@
       props:["menuinfo","clicks"],
       methods:{
           fun1(p,idx){
+            console.log(showiframe.window.fun)
             showiframe.window.fun(p)
             this.clicks(idx)
           }

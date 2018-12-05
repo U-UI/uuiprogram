@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/mobile.css" />
   <link rel="stylesheet" href="css/page.css" />
   <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>mobile</title>
 </head>
 
@@ -28,7 +29,12 @@
 <script src="js/components.js"></script>
 <script src="js/page.js"></script>
 <script src="js/swiper.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/slider.js" ></script>
+
+
 <script>
+
   //==========
   /**
    * 子目录
@@ -38,6 +44,7 @@
     props: ["module"],
     methods: {
       jumpPage() {
+
         this.$router.push("/" + this.module.path);
       }
     },
@@ -103,7 +110,6 @@
                         {path:"AddressWrite",name:"添加地址"},
                         {path:"discoupon",name:"优惠券"},
                         {path:"FindHeader",name:"头部下拉"},
-                        {path:"goTops",name:"回到顶部"},
                         {path:"ContentPerson",name:"编辑信息"},
                         {path:"pagebtn",name:"分页器"},
                         
@@ -117,7 +123,8 @@
                           {path:"AllGop",name:"发现页面"},
                           {path:"dangdangCart",name:"购物车"},
                           {path:"MineBig",name:"个人中心"}, 
-                          {path:"productxq",name:"商品详情"}, 
+                          {path:"productxq",name:"商品详情"},
+                          {path:"indexpage",name:"index"},
                           
                         ]
               }
@@ -128,6 +135,7 @@
     components: {
       category
     }
+
   };
   //=================
   /**
@@ -157,6 +165,7 @@
       {path: "/MineBig",component: MineBig},
       {path: "/productxq",component: productxq},
       {path: "/pagebtn",component: pagebtn},
+      {path: "/indexpage",component: indexpage},
       
     ]
   });
